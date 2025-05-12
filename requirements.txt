@@ -1,7 +1,7 @@
 streamlit==1.45.0
-torch==2.5.1
-torchvision==0.18.1
-pillow
-numpy
+torch==1.13.1
+torchvision==0.14.1
+pillow==11.1.0
+numpy==1.26.4
 lpips==0.1.4
 torchjpeg==0.9.32
