@@ -1,12 +1,12 @@
-name: streamlit-app
+name: myenv
+channels:
+  - conda-forge
 dependencies:
   - python=3.9
-  - pip
-  - pip:
-    - streamlit==1.45.0
-    - torch==1.13.1
-    - torchvision==0.14.1
-    - pillow==11.1.0
-    - numpy==1.26.4
-    - lpips==0.1.4
-    - torchjpeg==0.9.32
+  - streamlit==1.45.0
+  - torch==1.13.1
+  - torchvision==0.14.1
+  - pillow==11.1.0
+  - numpy==1.26.4
+  - lpips==0.1.4
+  - torchjpeg==0.9.32
