@@ -6,6 +6,13 @@ import hashlib
 from ImageCompression import ImageCompression
 from torchvision import transforms
 
+st.set_page_config(
+    page_title="AI Compression",  # This sets the browser tab title
+    page_icon="🧠",                       # Optional: icon in the tab
+    layout="centered",                   # or "wide"
+    initial_sidebar_state="auto"         # or "expanded" or "collapsed"
+)
+
 # XOR-based cipher
 def xor_cipher(data: bytes, password: str) -> bytes:
     key = hashlib.sha256(password.encode('utf-8')).digest()
@@ -23,12 +30,6 @@ to_pil = transforms.ToPILImage()
 to_tensor = transforms.ToTensor()
 model = load_model()
 
-st.set_page_config(
-    page_title="AI Compression",  # This sets the browser tab title
-    page_icon="🧠",                       # Optional: icon in the tab
-    layout="centered",                   # or "wide"
-    initial_sidebar_state="auto"         # or "expanded" or "collapsed"
-)
 
 st.title("AI Based Image Compression")
 
