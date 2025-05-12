@@ -23,6 +23,13 @@ to_pil = transforms.ToPILImage()
 to_tensor = transforms.ToTensor()
 model = load_model()
 
+st.set_page_config(
+    page_title="AI Compression",  # This sets the browser tab title
+    page_icon="AI",                       # Optional: icon in the tab
+    layout="centered",                   # or "wide"
+    initial_sidebar_state="auto"         # or "expanded" or "collapsed"
+)
+
 st.title("AI Based Image Compression")
 
 # Single uploader for both actions
