@@ -1,0 +1,4 @@
+torch
+lightning
+torchjpeg --no-deps
+install Pillow
